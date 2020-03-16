@@ -1,0 +1,431 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+/* For layout custom CSS */
+
+.scooter-filter-opt {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.scooter-filter-opt label {
+	margin-bottom: 16px;
+}
+
+.scooter-filter-opt select {
+	max-width: 220px;
+}
+
+.scooter-modal-select {
+	margin-right: 20px;
+	border: 1px solid #e9e9e9;
+	padding: 20px 40px;
+	border-radius: 4px;
+	max-width: 380px;
+}
+
+.scooter-option-filter {
+	border: 1px solid #e9e9e9;
+	padding: 20px 40px;
+	border-radius: 4px;
+	flex: 1;
+}
+
+.scooters_modals_img {
+	padding: 30px;
+	max-width: 220px;
+}
+
+.scooter-range-data-result {
+	margin-top: 30px;
+}
+
+
+/* Form Fiels CSS */
+
+.range {
+	position: relative;
+	/* width: 287px; */
+	width: calc(100% - 4px);
+	height: 4px;
+}
+
+.temp_range {
+	position: relative;
+	width: 455px;
+	height: 4px;
+}
+
+.weight_range {
+	position: relative;
+	width: 390px;
+	height: 4px;
+}
+
+.range input,
+.temp_range input,
+.weight_range input {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	height: 0;
+	padding: 0px;
+	-webkit-appearance: none;
+	margin: 2px;
+	border: none;
+}
+
+.range input::-webkit-slider-thumb,
+.temp_range input::-webkit-slider-thumb,
+.weight_range input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 18px;
+	height: 18px;
+	margin: -8px 0 0;
+	border-radius: 50%;
+	background: #df001f;
+	cursor: pointer;
+	border: 0 !important;
+}
+
+.range input::-moz-range-thumb,
+.temp_range input::-moz-range-thumb,
+.weight_range input::-moz-range-thumb {
+	width: 18px;
+	height: 18px;
+	margin: -8px 0 0;
+	border-radius: 50%;
+	background: #df001f;
+	cursor: pointer;
+	border: 0 !important;
+}
+
+.range input::-ms-thumb,
+.temp_range input::-ms-thumb,
+.weight_range input::-ms-thumb {
+	width: 18px;
+	height: 18px;
+	margin: -8px 0 0;
+	border-radius: 50%;
+	background: #df001f;
+	cursor: pointer;
+	border: 0 !important;
+}
+
+.range input::-webkit-slider-runnable-track,
+.temp_range input::-webkit-slider-runnable-track,
+.weight_range input::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background: #b2b2b2;
+}
+
+.range input::-moz-range-track,
+.temp_range input::-moz-range-track,
+.weight_range input::-moz-range-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background: #b2b2b2;
+}
+
+.range input::-ms-track,
+.temp_range input::-ms-track,
+.weight_range input::-ms-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background: #b2b2b2;
+}
+
+.range input:focus,
+.temp_range input:focus,
+.weight_range input:focus {
+	background: none;
+	outline: none;
+}
+
+.range input::-ms-track,
+.temp_range input::-ms-track,
+.weight_range::-ms-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+.range-labels {
+	margin: 18px -66px 0px !important;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.temp-range-labels {
+	margin: 18px -24px 0 !important;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.weight-range-labels {
+	margin: 18px -28px 0 !important;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.range-labels li {
+	position: relative;
+	float: left;
+	width: 140px;
+	text-align: center;
+	color: #b2b2b2;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0px !important;
+}
+
+.temp-range-labels li {
+	position: relative;
+	float: left;
+	width: 56px;
+	text-align: center;
+	color: #b2b2b2;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0px !important;
+}
+
+.weight-range-labels li {
+	position: relative;
+	float: left;
+	width: 64px;
+	text-align: center;
+	color: #b2b2b2;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0px !important;
+}
+
+.range-labels li::before,
+.temp-range-labels li::before,
+.weight-range-labels li::before {
+	position: absolute;
+	top: -25px;
+	right: 0;
+	left: 0;
+	content: "";
+	margin: 0 auto;
+	width: 9px;
+	height: 9px;
+	background: #b2b2b2;
+	border-radius: 50%;
+}
+
+.range-labels .active,
+.temp-range-labels .active,
+.weight-range-labels .active {
+	color: #df001f;
+}
+
+.range-labels .selected::before,
+.temp-range-labels .selected::before,
+.weight-range-labels .selected::before {
+	background: #df001f;
+}
+
+.range-labels .active.selected::before,
+.temp-range-labels .active.selected::before,
+.weight-range-labels .active.selected::before {
+	display: none;
+}
+
+.scooter-temp,
+.scooter-weight {
+	margin-bottom: 20px;
+}
+
+.state_data_wrapper {
+	margin-top: 20px;
+}
+
+.range-calc-form .submit-btn {
+	background-color: #DF001F !important;
+	border-color: #DF001F !important;
+	border-radius: 3px;
+	margin-top: 30px;
+	color: #fff !important;
+}
+
+.range-data-wrapper {
+	margin-top: 30px;
+}
+
+.country-wrapper {
+	display: flex;
+}
+
+.contries_section {
+	margin-right: 30px;
+}
+
+
+/* Temprature switch button CSS */
+
+.switch {
+	position: relative;
+	display: block;
+	/* vertical-align: top; */
+	width: 125px;
+	height: 30px;
+	padding: 0px;
+	margin: 0 10px 16px 0;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #E1B42B;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	top: -34px;
+}
+
+.switch-label:before,
+.switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+}
+
+.switch-label:before {
+	content: attr(data-off);
+	right: 11px;
+	color: #ffffff;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.switch-label:after {
+	content: attr(data-on);
+	left: 11px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+}
+
+.switch-input:checked~.switch-label {
+	background: #df001f;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.switch-input:checked~.switch-label:before {
+	opacity: 0;
+}
+
+.switch-input:checked~.switch-label:after {
+	opacity: 1;
+}
+
+.switch-handle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 28px;
+	height: 28px;
+	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.switch-input:checked~.switch-handle {
+	left: 97px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Transition
+========================== */
+
+.switch-label,
+.switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+
+@media only screen and (max-width: 1060px) {
+	.scooter-modal-select {
+		width: 100%;
+		margin: 0px;
+		padding: 20px;
+	}
+	.scooter-option-filter {
+		margin-top: 30px;
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	.country-wrapper {
+		flex-direction: column;
+	}
+	#state_data_wrapper {
+		margin-top: 16px;
+	}
+	.scooter-mode-sec {
+		width: calc(100% - 40px);
+		margin: 0 auto;
+	}
+	.range-data-wrapper {
+		max-width: 300px;
+		overflow: scroll;
+		padding: 10px 20px 0px;
+	}
+	.temp-range-wrapper,
+	.weight-range-wrapper {
+		width: fit-content;
+	}
+}

@@ -1,0 +1,796 @@
+[
+    {
+        "key": "group_5e5a9ef496d52",
+        "title": "Scooter Speed Fields",
+        "fields": [
+            {
+                "key": "field_5e5a9f05a7e1d",
+                "label": "Scooter Speeds",
+                "name": "scooter_speeds",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5e5a9f12a7e1e",
+                        "label": "Scooter Modes",
+                        "name": "scooter_modes",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "mode 1": "mode 1",
+                            "mode 2": "mode 2",
+                            "mode 3": "mode 3"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5e5a9f31a7e1f",
+                        "label": "Top Scooter Speed",
+                        "name": "top_scooter_speed",
+                        "type": "text",
+                        "instructions": "Speed is in km\/h",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "scooters"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5e417ed93809a",
+        "title": "Scooters Fields",
+        "fields": [
+            {
+                "key": "field_5e417f0cbf69a",
+                "label": "Scooter Data",
+                "name": "scooter_data",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add",
+                "sub_fields": [
+                    {
+                        "key": "field_5e41800ea0996",
+                        "label": "Temperature",
+                        "name": "temperature",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "-10": "-10",
+                            "0": "0",
+                            "10": "10",
+                            "15": "15",
+                            "20": "20",
+                            "25": "25",
+                            "30": "30",
+                            "35": "35",
+                            "40": "40"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5e418017a0997",
+                        "label": "Weight",
+                        "name": "weight",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "40": "40",
+                            "50": "50",
+                            "60": "60",
+                            "70": "70",
+                            "80": "80",
+                            "90": "90",
+                            "100": "100"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5e418022a0998",
+                        "label": "Range",
+                        "name": "range",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5e4e0ebddea06",
+                        "label": "Gears",
+                        "name": "gears",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "mode 1": "mode 1",
+                            "mode 2": "mode 2",
+                            "mode 3": "mode 3"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 1,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e41802ca0999",
+                "label": "KW value",
+                "name": "kw_value",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "scooters"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5e4183f97b717",
+        "title": "Setting Fields",
+        "fields": [
+            {
+                "key": "field_5e41842c9d657",
+                "label": "Price Calculator options",
+                "name": "price_calculator_options",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5e41846c9d658",
+                        "label": "Country",
+                        "name": "country",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "argentina": "Argentina",
+                            "australia": "Australia",
+                            "austria": "Austria",
+                            "belgium": "Belgium",
+                            "bulgaria": "Bulgaria",
+                            "chile": "Chile",
+                            "colombia": "Colombia",
+                            "croatia": "Croatia",
+                            "czech": "Czech",
+                            "denmark": "Denmark",
+                            "estonia": "Estonia",
+                            "finland": "Finland",
+                            "france": "France",
+                            "georgia": "Georgia",
+                            "germany": "Germany",
+                            "greece": "Greece",
+                            "iceland": "Iceland",
+                            "israel": "Israel",
+                            "italy": "Italy",
+                            "lao": "Lao",
+                            "latvia": "Latvia",
+                            "lithuania": "Lithuania",
+                            "luxemburg": "Luxemburg",
+                            "malaysia": "Malaysia",
+                            "malta": "Malta",
+                            "mexico": "Mexico",
+                            "nepal": "Nepal",
+                            "netherlands": "Netherlands",
+                            "new_zealand": "New Zealand",
+                            "norway": "Norway",
+                            "poland": "Poland",
+                            "portugal": "Portugal",
+                            "rep_of_ireland": "Rep. of Ireland",
+                            "romania": "Romania",
+                            "south_korea": "South Korea",
+                            "spain": "Spain",
+                            "sweden": "Sweden",
+                            "switzerland": "Switzerland",
+                            "thailand": "Thailand",
+                            "united_kingdom": "U.K.",
+                            "united_states": "United States",
+                            "uruguay": "Uruguay"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5e54039e09f20",
+                        "label": "USA States",
+                        "name": "usa_states",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5e41846c9d658",
+                                    "operator": "==",
+                                    "value": "united_states"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Alabama": "Alabama",
+                            "Alaska": "Alaska",
+                            "Arizona": "Arizona",
+                            "Arkansas": "Arkansas",
+                            "California": "California",
+                            "Colorado": "Colorado",
+                            "Connecticut": "Connecticut",
+                            "Delaware": "Delaware",
+                            "District Of Columbia": "District Of Columbia",
+                            "Florida": "Florida",
+                            "Georgia": "Georgia",
+                            "Hawaii": "Hawaii",
+                            "Idaho": "Idaho",
+                            "Illinois": "Illinois",
+                            "Indiana": "Indiana",
+                            "Iowa": "Iowa",
+                            "Kansas": "Kansas",
+                            "Kentucky": "Kentucky",
+                            "Louisiana": "Louisiana",
+                            "Maine": "Maine",
+                            "Maryland": "Maryland",
+                            "Massachusetts": "Massachusetts",
+                            "Michigan": "Michigan",
+                            "Minnesota": "Minnesota",
+                            "Mississippi": "Mississippi",
+                            "Missouri": "Missouri",
+                            "Montana": "Montana",
+                            "Nebraska": "Nebraska",
+                            "Nevada": "Nevada",
+                            "New Hampshire": "New Hampshire",
+                            "New Jersey": "New Jersey",
+                            "New Mexico": "New Mexico",
+                            "New York": "New York",
+                            "North Carolina": "North Carolina",
+                            "North Dakota": "North Dakota",
+                            "Ohio": "Ohio",
+                            "Oklahoma": "Oklahoma",
+                            "Oregon": "Oregon",
+                            "Pennsylvania": "Pennsylvania",
+                            "Rhode Island": "Rhode Island",
+                            "South Carolina": "South Carolina",
+                            "South Dakota": "South Dakota",
+                            "Tennessee": "Tennessee",
+                            "Texas": "Texas",
+                            "Utah": "Utah",
+                            "Vermont": "Vermont",
+                            "Virginia": "Virginia",
+                            "Washington": "Washington",
+                            "West Virginia": "West Virginia",
+                            "Wisconsin": "Wisconsin",
+                            "Wyoming": "Wyoming"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5e41848d9d659",
+                        "label": "Country Unit Price per KW",
+                        "name": "country_unit_price_per_kw",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5e4e0cc2358b9",
+                        "label": "Currency",
+                        "name": "currency",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "$": "$",
+                            "kr": "kr",
+                            "₨": "₨",
+                            "€": "€",
+                            "₣": "₣",
+                            "₩": "₩",
+                            "Kn": "Kn",
+                            "฿": "฿",
+                            "RM": "RM",
+                            "₭": "₭",
+                            "Kč": "Kč",
+                            "L": "L",
+                            "ლ": "ლ",
+                            "zł": "zł",
+                            "₪": "₪",
+                            "лв": "лв",
+                            "£": "£"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e42f0194673d",
+                "label": "Scooter Weight Frontend Options",
+                "name": "scooter_weight_frontend_options",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add Weight Option",
+                "sub_fields": [
+                    {
+                        "key": "field_5e42f05b4673e",
+                        "label": "Weight",
+                        "name": "weight",
+                        "type": "text",
+                        "instructions": "Weight is in Kg",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e441f0b7266c",
+                "label": "Contries For Frontend Form",
+                "name": "contries_for_frontend_form",
+                "type": "select",
+                "instructions": "This field created for admin to insert\/update\/delete countries for frontend form.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "argentina": "Argentina",
+                    "australia": "Australia",
+                    "austria": "Austria",
+                    "belgium": "Belgium",
+                    "bulgaria": "Bulgaria",
+                    "chile": "Chile",
+                    "colombia": "Colombia",
+                    "croatia": "Croatia",
+                    "czech": "Czech",
+                    "denmark": "Denmark",
+                    "estonia": "Estonia",
+                    "finland": "Finland",
+                    "france": "France",
+                    "georgia": "Georgia",
+                    "germany": "Germany",
+                    "greece": "Greece",
+                    "iceland": "Iceland",
+                    "israel": "Israel",
+                    "italy": "Italy",
+                    "lao": "Lao",
+                    "latvia": "Latvia",
+                    "lithuania": "Lithuania",
+                    "luxemburg": "Luxemburg",
+                    "malaysia": "Malaysia",
+                    "malta": "Malta",
+                    "mexico": "Mexico",
+                    "nepal": "Nepal",
+                    "netherlands": "Netherlands",
+                    "new_zealand": "New Zealand",
+                    "norway": "Norway",
+                    "poland": "Poland",
+                    "portugal": "Portugal",
+                    "rep_of_ireland": "Rep. of Ireland",
+                    "romania": "Romania",
+                    "south_korea": "South Korea",
+                    "spain": "Spain",
+                    "sweden": "Sweden",
+                    "switzerland": "Switzerland",
+                    "thailand": "Thailand",
+                    "united_kingdom": "U.K.",
+                    "united_states": "United States",
+                    "uruguay": "Uruguay"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e492f29f1241",
+                "label": "USA States Option for Frontend Form",
+                "name": "usa_states_option_for_frontend_form",
+                "type": "select",
+                "instructions": "This field created for admin to insert\/update\/delete countries for frontend form.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Alabama": "Alabama",
+                    "Alaska": "Alaska",
+                    "Arizona": "Arizona",
+                    "Arkansas": "Arkansas",
+                    "California": "California",
+                    "Colorado": "Colorado",
+                    "Connecticut": "Connecticut",
+                    "Delaware": "Delaware",
+                    "District Of Columbia": "District Of Columbia",
+                    "Florida": "Florida",
+                    "Georgia": "Georgia",
+                    "Hawaii": "Hawaii",
+                    "Idaho": "Idaho",
+                    "Illinois": "Illinois",
+                    "Indiana": "Indiana",
+                    "Iowa": "Iowa",
+                    "Kansas": "Kansas",
+                    "Kentucky": "Kentucky",
+                    "Louisiana": "Louisiana",
+                    "Maine": "Maine",
+                    "Maryland": "Maryland",
+                    "Massachusetts": "Massachusetts",
+                    "Michigan": "Michigan",
+                    "Minnesota": "Minnesota",
+                    "Mississippi": "Mississippi",
+                    "Missouri": "Missouri",
+                    "Montana": "Montana",
+                    "Nebraska": "Nebraska",
+                    "Nevada": "Nevada",
+                    "New Hampshire": "New Hampshire",
+                    "New Jersey": "New Jersey",
+                    "New Mexico": "New Mexico",
+                    "New York": "New York",
+                    "North Carolina": "North Carolina",
+                    "North Dakota": "North Dakota",
+                    "Ohio": "Ohio",
+                    "Oklahoma": "Oklahoma",
+                    "Oregon": "Oregon",
+                    "Pennsylvania": "Pennsylvania",
+                    "Rhode Island": "Rhode Island",
+                    "South Carolina": "South Carolina",
+                    "South Dakota": "South Dakota",
+                    "Tennessee": "Tennessee",
+                    "Texas": "Texas",
+                    "Utah": "Utah",
+                    "Vermont": "Vermont",
+                    "Virginia": "Virginia",
+                    "Washington": "Washington",
+                    "West Virginia": "West Virginia",
+                    "Wisconsin": "Wisconsin",
+                    "Wyoming": "Wyoming"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e4435d2748bc",
+                "label": "Temperature Frontend Form Options",
+                "name": "temperature_frontend_form_options",
+                "type": "select",
+                "instructions": "This field created for admin to insert\/update\/delete Temperature values for frontend form.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "temp -10": "temp -10",
+                    "temp 0": "temp 0",
+                    "temp 10": "temp 10",
+                    "temp 15": "temp 15",
+                    "temp 20": "temp 20",
+                    "temp 25": "temp 25",
+                    "temp 30": "temp 30",
+                    "temp 35": "temp 35",
+                    "temp 40": "temp 40"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e5026b81d77f",
+                "label": "Mailchimp CTA",
+                "name": "mailchimp_cta",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e5026c11d780",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5e5026c91d781",
+                        "label": "Description",
+                        "name": "description",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_5e5026d11d782",
+                        "label": "Form Shortcode",
+                        "name": "form_shortcode",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "range_calculator_settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
